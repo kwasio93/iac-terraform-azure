@@ -1,3 +1,3 @@
 output "url-addr"{
-	vlaue = azure_storage_blob_url
+	vlaue = azure_storage_blob.aplication.url
 }
