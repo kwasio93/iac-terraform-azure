@@ -1,36 +1,66 @@
-variable "azurem_resource_group"{
-	nazwa = string
-	lokacja = string
-}
-variable "azurem_storage_account"{
-	nazwa = string
-	grupa_zasobow = zmienna typyu terraform
-	lokacja = zmienna typu terraform
-	rodzaj_konta = string
-	Typ_powielania_konta = string
-}
-variable "azurem_app_service_plan"{
-	nazwa = string
-	lokacja = zmienna typu terraform
-	grupa_zasobow = zmienna typu terraform
+variable "resource_group_name"{
+	descryption = "resource name"
+	type = string
+	default = "exapmle_resorces"
 	
-	sku{
-		poziom = string
-		rozmiar = string
+}
+
+variable "resource_group_location"{
+	descryption = "Lokalizacja"
+	type = string
+	default = "West Europe"
+	
+}
+	
+}
+variable "storage_account_name"{
+	descryption = "function name"
+	type = string
+	default = "example-azure-function"
+}
+
+variable "storage_account_account_tier"{
+	descryption = "account tier"
+	type = string
+	default = "Standard"
 	}
+variable "storage_account_account_replication_type"{
+	descryption = "account replication type"
+	type = string
+	default = "LRS"
+	}
+variable "service_plan_name"{
+	descryption = "function name"
+	type = string
+	default = "example-function-name"	
 }
-variable "azurem_linux_function_app" {
-	nazwa = string
-	lokacja = zmienna typu terraform
-	grupa_zasobow = zmienna typu terraform
-	plan_testow = zmienna typu terraform
-	system_operacyjny = string
+variable "service_plan_tier"{
+	descryption = "Tier"
+	type = string
+	default = "Basic"	
 }
-variable "azurem_function_app_function" {
-	nazwa = string
-	grupa_zasobow = zmienna typu terraform
-	app_service_plan_id = zmienna typu terraform
-	przechowywanie = zmienna typu terraform
-	przechowanie_access_key = zmienna typu terraform  
-	system = zmienna typu terraform
+variable "service_plan_size"{
+	descryption = "Size"
+	type = string
+	default = "B1"	
+}
+variable "linux_function_app_name" {
+	descryption = "function name"
+	type = string
+	default = "example-function-name"
+}
+variable "linux_function_app_version" {
+	descryption = "version"
+	type = string
+	default = "Standard"
+}
+variable "linux_function_app_runtime_stack" {
+	descryption = "runtime_stack"
+	type = string
+	default = "LRS"
+}
+variable "function_app_function_name" {
+	descryption = "function name"
+	type = string
+	default = "example-function-name
 }
