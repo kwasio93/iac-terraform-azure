@@ -51,13 +51,13 @@ variable "storage_blob_type" {
 	type = string
 	default = "Page"	
 }
-variable "storage_blob_type" {
+variable "storage_blob_size" {
 	description ="size"
 	type = number
 	default = 0	
 }
-variable "storage_blob_type" {
+variable "storage_blob_source" {
 	description ="source_name"
 	type = string
-	default = "Page"	
+	default = "home/radek/Apliccation/plik.zip"	
 }

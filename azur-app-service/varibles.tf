@@ -68,6 +68,10 @@ variable "branch"{
 	type = "string"
 	defalut = "https://github.com/kwasio93/iac-terraform-azure"
 }
+variable "repo_url"{
+	type = "string"
+	defalut = "master"
+}
 
 
 
