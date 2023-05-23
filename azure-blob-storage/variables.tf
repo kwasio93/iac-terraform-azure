@@ -1,3 +1,28 @@
+variable "resource_group_name"{
+	descryption = "resource name"
+	type = string
+	default = "exapmle_resorces"
+	
+}
+
+variable "resource_group_location"{
+	descryption = "Lokalizacja"
+	type = string
+	default = "West Europe"
+	
+}
+variable "storage_account_account_name" {
+	description ="resorce name"
+	type = string
+	default = ""example_resorces"
+}
+
+variable "storage_container_name"{
+	description ="resorce name"
+	type = string
+	default = "my_containers"
+}
+
 
 variable "storage_account_account_tier" {
 	description ="Tier account"
@@ -14,7 +39,13 @@ variable "storage_conatiner_storage_account_container_access_type" {
 	type = string
 	default = "Public"
 }
+
+variable "storage_blob_name" {
+	description ="File name"
+	type = string
+	default = "moj-plik.zip"	
 }
+
 variable "storage_blob_type" {
 	description ="type_name"
 	type = string
